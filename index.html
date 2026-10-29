@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#4f46e5" />
+    <!-- Default SEO (overridden by react-helmet-async per page) -->
+    <title>FixCode — Tutoriales de Desarrollo, DevOps y Terminal</title>
+    <meta name="description" content="Guías técnicas sobre Docker, React, Node.js, Git, Linux y despliegues en Firebase, Vercel y más." />
+    <!-- Open Graph defaults -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FixCode" />
+    <!-- Structured data: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "FixCode",
+      "url": "https://fixcode.dev",
+      "description": "Tutoriales técnicos sobre desarrollo de software, DevOps, terminal y despliegues.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://fixcode.dev/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

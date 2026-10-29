@@ -1,0 +1,2 @@
+# Google AdSense ads.txt file
+# Reemplazar con la línea provista por AdSense al ser aprobado.

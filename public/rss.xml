@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>FixCode</title>
+    <link>https://fixcode.me</link>
+    <description>Tutoriales técnicos, guías de errores, comandos de consola y despliegues.</description>
+    <language>es</language>
+    <item>
+      <title>Guía Completa: Docker Compose con Node.js y PostgreSQL</title>
+      <link>https://fixcode.me/articulo/docker-compose-nodejs-postgres</link>
+      <description>Aprende a configurar un entorno completo de desarrollo con Docker Compose, Node.js y PostgreSQL desde cero.</description>
+    </item>
+    <item>
+      <title>Cómo desplegar React en Firebase Hosting en 5 minutos</title>
+      <link>https://fixcode.me/articulo/deploy-react-firebase-hosting</link>
+      <description>Paso a paso para configurar Firebase CLI, generar el build y desplegar tu SPA con SSL gratuito y CDN global.</description>
+    </item>
+  </channel>
+</rss>
