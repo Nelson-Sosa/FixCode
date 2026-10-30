@@ -1,2 +1,1 @@
-# Google AdSense ads.txt file
-# Reemplazar con la línea provista por AdSense al ser aprobado.
+google.com, pub-3803263914561975, DIRECT, f08c47fec0942fa0
