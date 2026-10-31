@@ -49,6 +49,7 @@ export const ARTICLES: Article[] = [
     slug: 'docker-compose-nodejs-postgres',
     title: 'Docker Compose: Node.js + PostgreSQL desde cero',
     excerpt: 'Aprende a levantar un entorno de desarrollo completo con Node.js y PostgreSQL usando Docker Compose. Configura volúmenes, redes y variables de entorno correctamente.',
+    widgetId: 'docker-compose-generator',
     content: `
 ## Introducción
 
