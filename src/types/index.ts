@@ -11,6 +11,7 @@ export interface Article {
   readingTime: number; // in minutes
   coverImage?: string;
   featured?: boolean;
+  widgetId?: string; // ID del widget interactivo asociado al artículo
 }
 
 export type CategoryId = 'devops' | 'frontend' | 'backend' | 'terminal';

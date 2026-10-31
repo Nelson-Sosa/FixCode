@@ -305,6 +305,7 @@ jobs:
     slug: 'react-performance-lazy-loading',
     title: 'Optimizar rendimiento en React: Lazy Loading y Code Splitting',
     excerpt: 'Reduce el bundle size de tu app React con React.lazy, Suspense y code splitting. Mejora tus métricas de Lighthouse y Core Web Vitals de forma práctica.',
+    widgetId: 'px-to-rem',
     content: `
 ## El problema del bundle grande
 

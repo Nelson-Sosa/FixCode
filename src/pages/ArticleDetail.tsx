@@ -1,10 +1,11 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Clock, Calendar, ArrowLeft, Tag, Share2, Copy, Check } from 'lucide-react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import SEOHead from '../components/SEOHead';
 import { getArticleBySlug, ARTICLES } from '../data/articles';
 import ArticleCard from '../components/ArticleCard';
 import { CategoryBadge } from '../components/CategoryIcon';
+import { WIDGET_MAP } from '../components/widgets';
 
 // Simple markdown-like renderer for our content
 function renderContent(content: string): React.ReactNode {
@@ -227,6 +228,13 @@ export default function ArticleDetail() {
             <div className="prose-custom">
               {renderContent(article.content)}
             </div>
+
+            {/* Widget Interactivo */}
+            {article.widgetId && WIDGET_MAP[article.widgetId] && (
+              <div className="widget-container">
+                {React.createElement(WIDGET_MAP[article.widgetId])}
+              </div>
+            )}
 
             {/* Tags */}
             <div className="mt-10 pt-8 border-t border-slate-200 dark:border-slate-700/50">
