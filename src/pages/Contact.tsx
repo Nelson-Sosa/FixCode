@@ -65,10 +65,10 @@ export default function Contact() {
                 <h3 className="font-semibold text-slate-900 dark:text-white">Email</h3>
               </div>
               <a
-                href="mailto:hola@fixcode.dev"
+                href="mailto:hola@fixcode.page"
                 className="text-sm text-brand-600 dark:text-brand-400 hover:underline"
               >
-                hola@fixcode.dev
+                hola@fixcode.page
               </a>
             </div>
 

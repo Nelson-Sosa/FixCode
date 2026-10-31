@@ -3,8 +3,8 @@ import { Shield } from 'lucide-react';
 
 const LAST_UPDATED = '29 de octubre de 2024';
 const SITE_NAME = 'FixCode';
-const SITE_URL = 'https://fixcode.dev';
-const CONTACT_EMAIL = 'hola@fixcode.dev';
+const SITE_URL = 'https://fixcode.page';
+const CONTACT_EMAIL = 'hola@fixcode.page';
 
 export default function PrivacyPolicy() {
   return (

@@ -12,7 +12,7 @@ interface SEOHeadProps {
 }
 
 const SITE_NAME = 'FixCode';
-const SITE_URL = 'https://fixcode.dev';
+const SITE_URL = 'https://fixcode.page';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og-default.png`;
 
 export default function SEOHead({
