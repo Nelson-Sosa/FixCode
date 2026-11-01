@@ -528,6 +528,7 @@ git bisect reset
     slug: 'nodejs-express-api-rest-completa',
     title: 'API REST con Node.js y Express: Guía completa con autenticación JWT',
     excerpt: 'Construye una API REST robusta con Express, validación de datos con Zod, autenticación JWT con refresh tokens y manejo de errores centralizado.',
+    widgetId: 'jwt-decoder',
     content: `
 ## Estructura del proyecto
 
