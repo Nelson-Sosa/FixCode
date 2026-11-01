@@ -43,7 +43,9 @@ export function JwtDecoderWidget() {
   };
 
   const decodeJWT = (jwt: string): DecodedToken => {
-    const parts = jwt.trim().split('.');
+    // Limpiar espacios, saltos de línea y tabs del token completo
+    const cleanJwt = jwt.replace(/\s+/g, '').trim();
+    const parts = cleanJwt.split('.');
 
     if (parts.length !== 3) {
       throw new Error('Token JWT inválido: debe tener 3 partes separadas por puntos');
@@ -94,14 +96,17 @@ export function JwtDecoderWidget() {
   };
 
   useEffect(() => {
-    if (!token.trim()) {
+    // Limpiar espacios y saltos de línea automáticamente
+    const cleanToken = token.trim();
+    
+    if (!cleanToken) {
       setDecoded(null);
       setError('');
       return;
     }
 
     try {
-      const result = decodeJWT(token);
+      const result = decodeJWT(cleanToken);
       setDecoded(result);
       setError('');
     } catch (e) {
