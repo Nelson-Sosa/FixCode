@@ -2,7 +2,7 @@ import type { AffiliateOffer } from '../types/affiliate';
 
 /**
  * Oferta de Namecheap para dominios y SSL
- * TODO: Reemplazar affiliateUrl cuando Impact.com apruebe el enlace
+ * ✅ Enlace real de afiliado aprobado desde Impact.com
  */
 export const NAMECHEAP_OFFER: AffiliateOffer = {
   id: 'namecheap-domains',
@@ -11,8 +11,8 @@ export const NAMECHEAP_OFFER: AffiliateOffer = {
   description: 'Consigue tu dominio profesional .com o .dev con protección WHOIS gratuita de por vida y configuración DNS instantánea.',
   badge: 'Dominios desde $0.99/año',
   buttonText: 'Buscar Dominio en Namecheap',
-  affiliateUrl: 'https://www.namecheap.com/', // Placeholder - Actualizar con enlace de Impact.com
-  isPlaceholder: true,
+  affiliateUrl: 'https://namecheap.pxf.io/c/8096314/1632743/5618',
+  isPlaceholder: false,
 };
 
 /**
