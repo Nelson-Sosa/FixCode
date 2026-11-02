@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Copy, Check, Terminal, Lock, Unlock, FileText } from 'lucide-react';
 import { AffiliateCard } from '../common/AffiliateCard';
-import { NAMECHEAP_OFFER } from '../../config/affiliates';
+import { VULTR_TERMINAL_OFFER } from '../../config/affiliates';
 
 interface Permissions {
   user: { r: boolean; w: boolean; x: boolean };
@@ -345,7 +345,7 @@ export function ChmodCalculatorWidget() {
       </div>
 
       {/* Affiliate Card */}
-      <AffiliateCard offer={NAMECHEAP_OFFER} />
+      <AffiliateCard offer={VULTR_TERMINAL_OFFER} />
     </div>
   );
 }

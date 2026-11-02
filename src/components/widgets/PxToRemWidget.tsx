@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Copy, Check, Calculator } from 'lucide-react';
+import { AffiliateCard } from '../common/AffiliateCard';
+import { NAMECHEAP_OFFER } from '../../config/affiliates';
 
 export function PxToRemWidget() {
   const [pixels, setPixels] = useState<string>('16');
@@ -147,6 +149,9 @@ export function PxToRemWidget() {
           Usa <code className="px-1.5 py-0.5 rounded bg-white dark:bg-surface-900 font-mono text-brand-600 dark:text-brand-400">rem</code> en lugar de <code className="px-1.5 py-0.5 rounded bg-white dark:bg-surface-900 font-mono">px</code> para mejorar la accesibilidad y escalabilidad de tu diseño.
         </p>
       </div>
+
+      {/* Affiliate Card */}
+      <AffiliateCard offer={NAMECHEAP_OFFER} />
     </div>
   );
 }

@@ -16,8 +16,38 @@ export const NAMECHEAP_OFFER: AffiliateOffer = {
 };
 
 /**
- * Oferta de DigitalOcean para hosting cloud
- * TODO: Reemplazar affiliateUrl cuando se apruebe
+ * Oferta de Vultr para DevOps (Docker, hosting cloud)
+ * ✅ Enlace real de afiliado aprobado
+ */
+export const VULTR_DEVOPS_OFFER: AffiliateOffer = {
+  id: 'vultr-devops',
+  provider: 'Vultr Cloud',
+  title: 'Despliega tus Contenedores y VPS Cloud',
+  description: 'Prueba tus configuraciones docker-compose y servidores en la nube de alta velocidad con $300 USD de regalo.',
+  badge: '$300 Crédito Gratis',
+  buttonText: 'Probar Vultr Cloud',
+  affiliateUrl: 'https://www.vultr.com/?ref=9932898',
+  isPlaceholder: false,
+};
+
+/**
+ * Oferta de Vultr para Terminal/Linux (VPS dedicados)
+ * ✅ Enlace real de afiliado aprobado
+ */
+export const VULTR_TERMINAL_OFFER: AffiliateOffer = {
+  id: 'vultr-terminal',
+  provider: 'Vultr Cloud',
+  title: 'Servidores Linux VPS Dedicados',
+  description: 'Ejecuta scripts de terminal, permisos chmod y entornos bash en servidores reales. VPS de alto rendimiento desde $2.50/mes.',
+  badge: 'VPS desde $2.50/mes',
+  buttonText: 'Crear Server en Vultr',
+  affiliateUrl: 'https://www.vultr.com/?ref=9932898',
+  isPlaceholder: false,
+};
+
+/**
+ * Oferta de DigitalOcean para hosting cloud (Deprecated - Usar Vultr)
+ * @deprecated Usar VULTR_DEVOPS_OFFER en su lugar
  */
 export const DIGITALOCEAN_OFFER: AffiliateOffer = {
   id: 'digitalocean-cloud',
@@ -31,8 +61,8 @@ export const DIGITALOCEAN_OFFER: AffiliateOffer = {
 };
 
 /**
- * Oferta de Udemy para cursos de Linux
- * TODO: Reemplazar affiliateUrl cuando se apruebe
+ * Oferta de Udemy para cursos de Linux (Deprecated - Usar Vultr)
+ * @deprecated Usar VULTR_TERMINAL_OFFER en su lugar
  */
 export const UDEMY_LINUX_OFFER: AffiliateOffer = {
   id: 'udemy-linux-courses',
@@ -50,9 +80,19 @@ export const UDEMY_LINUX_OFFER: AffiliateOffer = {
  * Útil para seleccionar dinámicamente según el contenido
  */
 export const AFFILIATE_OFFERS = {
+  // Frontend
+  frontend: NAMECHEAP_OFFER,
   namecheap: NAMECHEAP_OFFER,
-  digitalocean: DIGITALOCEAN_OFFER,
-  udemy_linux: UDEMY_LINUX_OFFER,
+  
+  // DevOps
+  devops: VULTR_DEVOPS_OFFER,
+  vultr_devops: VULTR_DEVOPS_OFFER,
+  digitalocean: DIGITALOCEAN_OFFER, // Deprecated
+  
+  // Terminal / Linux
+  terminal: VULTR_TERMINAL_OFFER,
+  vultr_terminal: VULTR_TERMINAL_OFFER,
+  udemy_linux: UDEMY_LINUX_OFFER, // Deprecated
 } as const;
 
 /**

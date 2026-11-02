@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Copy, Check, Download, Box } from 'lucide-react';
 import { AffiliateCard } from '../common/AffiliateCard';
-import { DIGITALOCEAN_OFFER } from '../../config/affiliates';
+import { VULTR_DEVOPS_OFFER } from '../../config/affiliates';
 
 interface ServiceConfig {
   enabled: boolean;
@@ -364,7 +364,7 @@ export function DockerComposeWidget() {
       </div>
 
       {/* Affiliate Card */}
-      <AffiliateCard offer={DIGITALOCEAN_OFFER} />
+      <AffiliateCard offer={VULTR_DEVOPS_OFFER} />
     </div>
   );
 }
