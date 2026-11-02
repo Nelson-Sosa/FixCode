@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Copy, Check, Download, Box } from 'lucide-react';
 import { AffiliateCard } from '../common/AffiliateCard';
+import { DIGITALOCEAN_OFFER } from '../../config/affiliates';
 
 interface ServiceConfig {
   enabled: boolean;
@@ -363,13 +364,7 @@ export function DockerComposeWidget() {
       </div>
 
       {/* Affiliate Card */}
-      <AffiliateCard
-        title="¿Necesitas un servidor para tus contenedores?"
-        description="DigitalOcean ofrece droplets optimizados para Docker con SSD ultrarrápido y snapshots automáticos. Ideal para desplegar tus stacks en producción."
-        buttonText="Obtener $200 de Crédito Gratis"
-        affiliateUrl="https://m.do.co/c/your-referral-code"
-        badgeText="$200 de Crédito Gratis"
-      />
+      <AffiliateCard offer={DIGITALOCEAN_OFFER} />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Copy, Check, Terminal, Lock, Unlock, FileText } from 'lucide-react';
 import { AffiliateCard } from '../common/AffiliateCard';
+import { NAMECHEAP_OFFER } from '../../config/affiliates';
 
 interface Permissions {
   user: { r: boolean; w: boolean; x: boolean };
@@ -344,13 +345,7 @@ export function ChmodCalculatorWidget() {
       </div>
 
       {/* Affiliate Card */}
-      <AffiliateCard
-        title="¿Quieres dominar Linux como un profesional?"
-        description="Udemy ofrece cursos completos de Linux y administración de servidores con certificación. Aprende desde comandos básicos hasta administración avanzada."
-        buttonText="Ver Cursos de Linux"
-        affiliateUrl="https://udemy.com/your-affiliate-link"
-        badgeText="Hasta 90% de Descuento"
-      />
+      <AffiliateCard offer={NAMECHEAP_OFFER} />
     </div>
   );
 }
