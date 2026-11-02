@@ -11,6 +11,8 @@ const Contact = lazy(() => import('../pages/Contact'));
 const PrivacyPolicy = lazy(() => import('../pages/PrivacyPolicy'));
 const Terms = lazy(() => import('../pages/Terms'));
 const NotFound = lazy(() => import('../pages/NotFound'));
+const SshCommandGenerator = lazy(() => import('../components/tools/SshCommandGenerator'));
+const Resources = lazy(() => import('../pages/Resources'));
 
 function PageLoader() {
   return (
@@ -31,6 +33,8 @@ export default function AppRoutes() {
           <Route path="/" element={<Home />} />
           <Route path="/articulo/:slug" element={<ArticleDetail />} />
           <Route path="/categoria/:categoryId" element={<CategoryPage />} />
+          <Route path="/herramientas/ssh-generator" element={<SshCommandGenerator />} />
+          <Route path="/recursos" element={<Resources />} />
           <Route path="/sobre-nosotros" element={<About />} />
           <Route path="/contacto" element={<Contact />} />
           <Route path="/politica-de-privacidad" element={<PrivacyPolicy />} />

@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { to: '/categoria/frontend', label: 'Frontend' },
   { to: '/categoria/backend', label: 'Backend' },
   { to: '/categoria/terminal', label: 'Terminal' },
+  { to: '/recursos', label: 'Recursos' },
   { to: '/sobre-nosotros', label: 'Sobre Nosotros' },
   { to: '/contacto', label: 'Contacto' },
 ];
