@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Copy, Check, Shield, AlertCircle, Clock, Key } from 'lucide-react';
+import { AffiliateCard } from '../common/AffiliateCard';
+import { SUPABASE_BACKEND_OFFER } from '../../config/affiliates';
 
 interface DecodedToken {
   header: Record<string, unknown>;
@@ -328,6 +330,9 @@ export function JwtDecoderWidget() {
           </p>
         </div>
       )}
+
+      {/* Affiliate Card */}
+      <AffiliateCard offer={SUPABASE_BACKEND_OFFER} />
     </div>
   );
 }

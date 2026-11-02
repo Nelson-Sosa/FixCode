@@ -76,6 +76,21 @@ export const UDEMY_LINUX_OFFER: AffiliateOffer = {
 };
 
 /**
+ * Oferta de Supabase para Backend (PostgreSQL, Auth, APIs)
+ * ⏳ Pendiente: Agregar enlace de PartnerStack
+ */
+export const SUPABASE_BACKEND_OFFER: AffiliateOffer = {
+  id: 'supabase-backend',
+  provider: 'Supabase',
+  title: 'Bases de Datos Postgres y Autenticación',
+  description: 'Crea tu backend completo con bases de datos PostgreSQL en tiempo real, autenticación y APIs instantáneas.',
+  badge: 'Tier Gratuito Disponible',
+  buttonText: 'Crear Proyecto en Supabase',
+  affiliateUrl: 'https://supabase.com', // TODO: Reemplazar con enlace de PartnerStack
+  isPlaceholder: true,
+};
+
+/**
  * Mapa de ofertas por categoría/contexto
  * Útil para seleccionar dinámicamente según el contenido
  */
@@ -88,6 +103,10 @@ export const AFFILIATE_OFFERS = {
   devops: VULTR_DEVOPS_OFFER,
   vultr_devops: VULTR_DEVOPS_OFFER,
   digitalocean: DIGITALOCEAN_OFFER, // Deprecated
+  
+  // Backend
+  backend: SUPABASE_BACKEND_OFFER,
+  supabase: SUPABASE_BACKEND_OFFER,
   
   // Terminal / Linux
   terminal: VULTR_TERMINAL_OFFER,
