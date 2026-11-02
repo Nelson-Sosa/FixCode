@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Copy, Check, Download, Box } from 'lucide-react';
+import { AffiliateCard } from '../common/AffiliateCard';
 
 interface ServiceConfig {
   enabled: boolean;
@@ -360,6 +361,15 @@ export function DockerComposeWidget() {
           Guarda el archivo como <code className="px-1.5 py-0.5 rounded bg-white dark:bg-surface-900 font-mono text-cyan-600 dark:text-cyan-400">docker-compose.yml</code> en la raíz de tu proyecto y ejecuta <code className="px-1.5 py-0.5 rounded bg-white dark:bg-surface-900 font-mono">docker compose up -d</code> para levantar tu stack.
         </p>
       </div>
+
+      {/* Affiliate Card */}
+      <AffiliateCard
+        title="¿Necesitas un servidor para tus contenedores?"
+        description="DigitalOcean ofrece droplets optimizados para Docker con SSD ultrarrápido y snapshots automáticos. Ideal para desplegar tus stacks en producción."
+        buttonText="Obtener $200 de Crédito Gratis"
+        affiliateUrl="https://m.do.co/c/your-referral-code"
+        badgeText="$200 de Crédito Gratis"
+      />
     </div>
   );
 }

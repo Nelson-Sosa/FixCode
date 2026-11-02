@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Copy, Check, Terminal, Lock, Unlock, FileText } from 'lucide-react';
+import { AffiliateCard } from '../common/AffiliateCard';
 
 interface Permissions {
   user: { r: boolean; w: boolean; x: boolean };
@@ -341,6 +342,15 @@ export function ChmodCalculatorWidget() {
           Los permisos se calculan sumando: <code className="px-1.5 py-0.5 rounded bg-white dark:bg-surface-900 font-mono text-emerald-600 dark:text-emerald-400">r=4</code>, <code className="px-1.5 py-0.5 rounded bg-white dark:bg-surface-900 font-mono text-blue-600 dark:text-blue-400">w=2</code>, <code className="px-1.5 py-0.5 rounded bg-white dark:bg-surface-900 font-mono text-purple-600 dark:text-purple-400">x=1</code>. Por ejemplo, <code className="px-1.5 py-0.5 rounded bg-white dark:bg-surface-900 font-mono">rwx = 7</code>, <code className="px-1.5 py-0.5 rounded bg-white dark:bg-surface-900 font-mono">r-x = 5</code>.
         </p>
       </div>
+
+      {/* Affiliate Card */}
+      <AffiliateCard
+        title="¿Quieres dominar Linux como un profesional?"
+        description="Udemy ofrece cursos completos de Linux y administración de servidores con certificación. Aprende desde comandos básicos hasta administración avanzada."
+        buttonText="Ver Cursos de Linux"
+        affiliateUrl="https://udemy.com/your-affiliate-link"
+        badgeText="Hasta 90% de Descuento"
+      />
     </div>
   );
 }
