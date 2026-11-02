@@ -77,17 +77,17 @@ export const UDEMY_LINUX_OFFER: AffiliateOffer = {
 
 /**
  * Oferta de Supabase para Backend (PostgreSQL, Auth, APIs)
- * ⏳ Pendiente: Agregar enlace de PartnerStack
+ * ✅ Enlace directo activo
  */
 export const SUPABASE_BACKEND_OFFER: AffiliateOffer = {
   id: 'supabase-backend',
   provider: 'Supabase',
   title: 'Bases de Datos Postgres y Autenticación',
   description: 'Crea tu backend completo con bases de datos PostgreSQL en tiempo real, autenticación y APIs instantáneas.',
-  badge: 'Tier Gratuito Disponible',
-  buttonText: 'Crear Proyecto en Supabase',
-  affiliateUrl: 'https://supabase.com', // TODO: Reemplazar con enlace de PartnerStack
-  isPlaceholder: true,
+  badge: 'Plan Gratuito Disponible',
+  buttonText: 'Comenzar Gratis en Supabase',
+  affiliateUrl: 'https://supabase.com',
+  isPlaceholder: false,
 };
 
 /**
