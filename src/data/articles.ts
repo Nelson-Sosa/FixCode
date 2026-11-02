@@ -667,6 +667,7 @@ export function validate(schema: z.ZodSchema) {
     slug: 'linux-comandos-productividad',
     title: '20 comandos Linux que multiplicarán tu productividad',
     excerpt: 'Descubre herramientas como tmux, fzf, ripgrep, bat y htop que transformarán tu flujo de trabajo en la terminal. Con ejemplos prácticos y aliases útiles.',
+    widgetId: 'chmod-calculator',
     content: `
 ## Herramientas modernas que debes instalar
 
