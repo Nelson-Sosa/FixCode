@@ -6,6 +6,23 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "redirects": [
+      {
+        "source": "/go/namecheap",
+        "destination": "https://namecheap.pxf.io/c/8096314/1632743/5618",
+        "type": 301
+      },
+      {
+        "source": "/go/vultr",
+        "destination": "https://www.vultr.com/?ref=9932898",
+        "type": 301
+      },
+      {
+        "source": "/go/supabase",
+        "destination": "https://supabase.com",
+        "type": 301
+      }
+    ],
     "rewrites": [
       {
         "source": "**",

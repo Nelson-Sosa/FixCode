@@ -1,0 +1,7 @@
+# Redirects para enlaces de afiliados (evitar bloqueo de adblockers)
+/go/namecheap           https://namecheap.pxf.io/c/8096314/1632743/5618  301
+/go/vultr               https://www.vultr.com/?ref=9932898                301
+/go/supabase            https://supabase.com                              301
+
+# SPA fallback
+/*                      /index.html                                       200

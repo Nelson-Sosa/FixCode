@@ -3,6 +3,7 @@ import type { AffiliateOffer } from '../types/affiliate';
 /**
  * Oferta de Namecheap para dominios y SSL
  * ✅ Enlace real de afiliado aprobado desde Impact.com
+ * 🛡️ Usando redirect interno para evitar bloqueo de adblockers
  */
 export const NAMECHEAP_OFFER: AffiliateOffer = {
   id: 'namecheap-domains',
@@ -11,13 +12,14 @@ export const NAMECHEAP_OFFER: AffiliateOffer = {
   description: 'Consigue tu dominio profesional .com o .dev con protección WHOIS gratuita de por vida y configuración DNS instantánea.',
   badge: 'Dominios desde $0.99/año',
   buttonText: 'Buscar Dominio en Namecheap',
-  affiliateUrl: 'https://namecheap.pxf.io/c/8096314/1632743/5618',
+  affiliateUrl: 'https://fixcode.page/go/namecheap',
   isPlaceholder: false,
 };
 
 /**
  * Oferta de Vultr para DevOps (Docker, hosting cloud)
  * ✅ Enlace real de afiliado aprobado
+ * 🛡️ Usando redirect interno para evitar bloqueo de adblockers
  */
 export const VULTR_DEVOPS_OFFER: AffiliateOffer = {
   id: 'vultr-devops',
@@ -26,13 +28,14 @@ export const VULTR_DEVOPS_OFFER: AffiliateOffer = {
   description: 'Prueba tus configuraciones docker-compose y servidores en la nube de alta velocidad con $300 USD de regalo.',
   badge: '$300 Crédito Gratis',
   buttonText: 'Probar Vultr Cloud',
-  affiliateUrl: 'https://www.vultr.com/?ref=9932898',
+  affiliateUrl: 'https://fixcode.page/go/vultr',
   isPlaceholder: false,
 };
 
 /**
  * Oferta de Vultr para Terminal/Linux (VPS dedicados)
  * ✅ Enlace real de afiliado aprobado
+ * 🛡️ Usando redirect interno para evitar bloqueo de adblockers
  */
 export const VULTR_TERMINAL_OFFER: AffiliateOffer = {
   id: 'vultr-terminal',
@@ -41,7 +44,7 @@ export const VULTR_TERMINAL_OFFER: AffiliateOffer = {
   description: 'Ejecuta scripts de terminal, permisos chmod y entornos bash en servidores reales. VPS de alto rendimiento desde $2.50/mes.',
   badge: 'VPS desde $2.50/mes',
   buttonText: 'Crear Server en Vultr',
-  affiliateUrl: 'https://www.vultr.com/?ref=9932898',
+  affiliateUrl: 'https://fixcode.page/go/vultr',
   isPlaceholder: false,
 };
 
@@ -78,6 +81,7 @@ export const UDEMY_LINUX_OFFER: AffiliateOffer = {
 /**
  * Oferta de Supabase para Backend (PostgreSQL, Auth, APIs)
  * ✅ Enlace directo activo
+ * 🛡️ Usando redirect interno para evitar bloqueo de adblockers
  */
 export const SUPABASE_BACKEND_OFFER: AffiliateOffer = {
   id: 'supabase-backend',
@@ -86,7 +90,7 @@ export const SUPABASE_BACKEND_OFFER: AffiliateOffer = {
   description: 'Crea tu backend completo con bases de datos PostgreSQL en tiempo real, autenticación y APIs instantáneas.',
   badge: 'Plan Gratuito Disponible',
   buttonText: 'Comenzar Gratis en Supabase',
-  affiliateUrl: 'https://supabase.com',
+  affiliateUrl: 'https://fixcode.page/go/supabase',
   isPlaceholder: false,
 };
 
