@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Copy, Check, Calculator } from 'lucide-react';
 import { AffiliateCard } from '../common/AffiliateCard';
 import { NAMECHEAP_OFFER } from '../../config/affiliates';
+import { SEO } from '../SEO';
 
 export function PxToRemWidget() {
   const [pixels, setPixels] = useState<string>('16');
@@ -43,7 +44,14 @@ export function PxToRemWidget() {
   };
 
   return (
-    <div className="my-8 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-brand-50 to-purple-50 dark:from-surface-800 dark:to-surface-900 border border-brand-200 dark:border-slate-700 shadow-lg">
+    <>
+      <SEO
+        title="Conversor PX a REM - Calculadora CSS Online"
+        description="Convierte píxeles (px) a unidades rem/em para CSS responsive. Herramienta gratuita para frontend developers con base personalizable de 16px."
+        keywords={['px to rem', 'conversor px rem', 'css calculator', 'responsive design', 'frontend', 'web development', 'css units']}
+        canonicalUrl="https://fixcode.page/articulo/px-a-rem-converter"
+      />
+      <div className="my-8 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-brand-50 to-purple-50 dark:from-surface-800 dark:to-surface-900 border border-brand-200 dark:border-slate-700 shadow-lg">
       {/* Header */}
       <div className="flex items-center gap-3 mb-6">
         <div className="w-10 h-10 rounded-xl bg-brand-500 flex items-center justify-center shadow-md">
@@ -153,5 +161,6 @@ export function PxToRemWidget() {
       {/* Affiliate Card */}
       <AffiliateCard offer={NAMECHEAP_OFFER} />
     </div>
+    </>
   );
 }

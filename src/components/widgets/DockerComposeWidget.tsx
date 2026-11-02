@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Copy, Check, Download, Box } from 'lucide-react';
 import { AffiliateCard } from '../common/AffiliateCard';
 import { VULTR_DEVOPS_OFFER } from '../../config/affiliates';
+import { SEO } from '../SEO';
 
 interface ServiceConfig {
   enabled: boolean;
@@ -172,7 +173,14 @@ export function DockerComposeWidget() {
   };
 
   return (
-    <div className="my-8 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-surface-800 dark:to-surface-900 border border-cyan-200 dark:border-slate-700 shadow-lg">
+    <>
+      <SEO
+        title="Generador y Validador de docker-compose.yml"
+        description="Genera y valida archivos docker-compose.yml sin errores de sintaxis. Configura servicios, volúmenes, redes y variables de entorno para Docker."
+        keywords={['docker', 'docker-compose', 'docker compose generator', 'devops', 'contenedores', 'yaml generator', 'microservicios']}
+        canonicalUrl="https://fixcode.page/articulo/docker-compose-facil"
+      />
+      <div className="my-8 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-surface-800 dark:to-surface-900 border border-cyan-200 dark:border-slate-700 shadow-lg">
       {/* Header */}
       <div className="flex items-center gap-3 mb-6">
         <div className="w-10 h-10 rounded-xl bg-cyan-500 flex items-center justify-center shadow-md">
@@ -366,5 +374,6 @@ export function DockerComposeWidget() {
       {/* Affiliate Card */}
       <AffiliateCard offer={VULTR_DEVOPS_OFFER} />
     </div>
+    </>
   );
 }

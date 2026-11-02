@@ -1,6 +1,6 @@
 import { Sparkles, ExternalLink, CheckCircle2 } from 'lucide-react';
-import SEOHead from '../components/SEOHead';
 import { CategoryIcon } from '../components/CategoryIcon';
+import { SEO } from '../components/SEO';
 import type { AffiliateOffer } from '../types/affiliate';
 import {
   NAMECHEAP_OFFER,
@@ -139,10 +139,11 @@ function CategorySection({ category }: { category: ResourceCategory }) {
 export default function Resources() {
   return (
     <>
-      <SEOHead
-        title="Recursos y Proveedores - FixCode"
+      <SEO
+        title="Recursos y Proveedores"
         description="Descubre las mejores herramientas y proveedores recomendados para desarrollo web, DevOps, servidores y backend. Recursos verificados por FixCode."
-        canonical="/recursos"
+        keywords={['recursos desarrollo', 'proveedores web', 'herramientas devops', 'hosting', 'dominios', 'vps', 'cloud']}
+        canonicalUrl="https://fixcode.page/recursos"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

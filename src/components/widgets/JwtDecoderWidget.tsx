@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Copy, Check, Shield, AlertCircle, Clock, Key } from 'lucide-react';
 import { AffiliateCard } from '../common/AffiliateCard';
 import { SUPABASE_BACKEND_OFFER } from '../../config/affiliates';
+import { SEO } from '../SEO';
 
 interface DecodedToken {
   header: Record<string, unknown>;
@@ -134,7 +135,14 @@ export function JwtDecoderWidget() {
   };
 
   return (
-    <div className="my-8 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-surface-800 dark:to-surface-900 border border-emerald-200 dark:border-slate-700 shadow-lg">
+    <>
+      <SEO
+        title="Decodificador y Validador JWT Online"
+        description="Decodifica, valida y analiza tokens JWT (JSON Web Tokens) en tiempo real. Inspecciona el Header, Payload y firma de tus tokens de forma segura."
+        keywords={['jwt', 'json web token', 'decodificador jwt', 'validador jwt', 'jwt online', 'backend', 'autenticación']}
+        canonicalUrl="https://fixcode.page/articulo/decodificar-jwt"
+      />
+      <div className="my-8 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-surface-800 dark:to-surface-900 border border-emerald-200 dark:border-slate-700 shadow-lg">
       {/* Header */}
       <div className="flex items-center gap-3 mb-6">
         <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center shadow-md">
@@ -334,5 +342,6 @@ export function JwtDecoderWidget() {
       {/* Affiliate Card */}
       <AffiliateCard offer={SUPABASE_BACKEND_OFFER} />
     </div>
+    </>
   );
 }
